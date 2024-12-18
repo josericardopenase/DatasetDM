@@ -100,13 +100,13 @@ First, build the image using the Docker CLI:
 docker build -t datasetdm .
 ```  
 
-Then, run the container:  
+Then, run the container with access to all GPUs:  
 
 ```
-docker run -it datasetdm
+docker run --gpus all -it datasetdm
 ```  
 
-This will start an interactive bash session where you can execute all inference and training commands. To load your datasets, simply use a bind-mount to link the corresponding folders.  
+This will start an interactive bash session where you can execute all inference and training commands. To load your datasets, simply use a bind-mount to link the corresponding folders. 
 
 ### Dataset Prepare
 
