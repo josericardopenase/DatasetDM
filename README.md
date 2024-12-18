@@ -92,6 +92,21 @@ There may be some errors (such as https://github.com/showlab/DatasetDM/issues/11
 
 Alternatively, you can directly utilize our diffuser, as there have been some modifications in ```./model/diffusers/models/unet_blocks.py```.
 
+### Installation (Docker)
+
+First, build the image using the Docker CLI:  
+
+```
+docker build -t datasetdm .
+```  
+
+Then, run the container:  
+
+```
+docker run -it datasetdm
+```  
+
+This will start an interactive bash session where you can execute all inference and training commands. To load your datasets, simply use a bind-mount to link the corresponding folders.  
 
 ### Dataset Prepare
 
